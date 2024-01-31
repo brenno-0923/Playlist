@@ -9,12 +9,12 @@
 </head>
 <body>
 
-<header>
-    <h1>Logo</h1>
-</header>
+<head>
+    <img src="imgs/logo.png" width="8%">
+</head>
 
 <div class="menu">
-    <a href="URL_DO_SEU_PRIMEIRO_LINK_AQUI">
+    <a href="index.html">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-record-fill" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M8 13A5 5 0 1 0 8 3a5 5 0 0 0 0 10"/>
         </svg>
@@ -34,18 +34,40 @@
 </div>
 
 
-<section>
-    <h2>Content Title</h2>
-    <p>Aqui é onde o conteúdo principal vai. Você pode adicionar texto, imagens, vídeos, etc.</p>
 
-   <!-- Twitter Embed Code -->
-   <a href="[1](https://twitter.com/username?ref_src=twsrc%5Etfw)">Tweets by username</a> 
-   <script async src="[2](https://platform.twitter.com/widgets.js)" charset="utf-8"></script> 
-</section>
+</div>
 
-<footer style="text-align:center; padding:20px; background-color:lightgrey;">
-   Conteúdo do rodapé
-</footer>
+    <img src="imgs/banner.png" width="30%">
+    
+    
+<div class="formulario">
+    <form>
+        <form action="processar_formulario.php" method="post" enctype="multipart/form-data">
+            <label for="nome_musica">Nome da Música:</label><br>
+            <input type="text" id="nome_musica" name="nome_musica" required><br><br>
+            
+            <label for="nome_artista">Nome do Artista:</label><br>
+            <input type="text" id="nome_artista" name="nome_artista" required><br><br>
+            
+            <label for="ano_musica">Ano da Música:</label><br>
+            <input type="number" id="ano_musica" name="ano_musica" min="1900" max="2099" required><br><br>
+            
+            <label for="musica">Upload da Música:</label><br>
+            <input type="file" id="musica" name="musica" accept=".mp3" required><br><br>
+            
+            <label for="letra_musica">Letra da Música:</label><br>
+            <textarea id="letra_musica" name="letra_musica" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    
+    
+    
+    </form>
+ 
+
+
 
 </body>
 </html>
+
